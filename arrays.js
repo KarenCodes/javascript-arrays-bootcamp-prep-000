@@ -6,8 +6,8 @@ function addElementToEndOfArray(array, element) {
 }
 addElementToEndOfArray()
 
-function addElementToEndOfArray(array, element) {
-  var newArray = [...array,element]
-  return newArray
+function destructivelyAddElementToBeginningOfArray(array, element) {
+  array = [...array,element]
+  return array
 }
-addElementToEndOfArray()
+destructivelyAddElementToBeginningOfArray()
